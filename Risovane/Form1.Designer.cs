@@ -35,6 +35,10 @@
             button4 = new Button();
             button5 = new Button();
             button6 = new Button();
+            button7 = new Button();
+            button8 = new Button();
+            button9 = new Button();
+            button10 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -51,7 +55,7 @@
             // button1
             // 
             button1.Font = new Font("Century Gothic", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            button1.Location = new Point(543, 107);
+            button1.Location = new Point(542, 50);
             button1.Name = "button1";
             button1.Size = new Size(105, 40);
             button1.TabIndex = 1;
@@ -62,7 +66,7 @@
             // button2
             // 
             button2.Font = new Font("Century Gothic", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            button2.Location = new Point(543, 153);
+            button2.Location = new Point(542, 96);
             button2.Name = "button2";
             button2.Size = new Size(105, 40);
             button2.TabIndex = 2;
@@ -73,7 +77,7 @@
             // button3
             // 
             button3.Font = new Font("Century Gothic", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            button3.Location = new Point(543, 199);
+            button3.Location = new Point(542, 142);
             button3.Name = "button3";
             button3.Size = new Size(105, 40);
             button3.TabIndex = 3;
@@ -84,7 +88,7 @@
             // button4
             // 
             button4.Font = new Font("Century Gothic", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            button4.Location = new Point(543, 245);
+            button4.Location = new Point(542, 188);
             button4.Name = "button4";
             button4.Size = new Size(105, 40);
             button4.TabIndex = 4;
@@ -95,7 +99,7 @@
             // button5
             // 
             button5.Font = new Font("Century Gothic", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            button5.Location = new Point(543, 291);
+            button5.Location = new Point(542, 234);
             button5.Name = "button5";
             button5.Size = new Size(105, 49);
             button5.TabIndex = 5;
@@ -105,15 +109,56 @@
             // 
             // button6
             // 
+            button6.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             button6.Font = new Font("Century Gothic", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            button6.Location = new Point(654, 107);
+            button6.Location = new Point(653, 50);
             button6.Name = "button6";
-            button6.Size = new Size(41, 233);
+            button6.Size = new Size(41, 279);
             button6.TabIndex = 6;
             button6.Text = "ОЧИСТИТЬ";
             button6.TextAlign = ContentAlignment.TopCenter;
             button6.UseVisualStyleBackColor = true;
             button6.Click += button6_Click;
+            // 
+            // button7
+            // 
+            button7.Location = new Point(542, 289);
+            button7.Name = "button7";
+            button7.Size = new Size(105, 40);
+            button7.TabIndex = 7;
+            button7.Text = "Круг(и)";
+            button7.UseVisualStyleBackColor = true;
+            button7.Click += button7_Click;
+            // 
+            // button8
+            // 
+            button8.Location = new Point(542, 335);
+            button8.Name = "button8";
+            button8.Size = new Size(105, 40);
+            button8.TabIndex = 8;
+            button8.Text = "Круги";
+            button8.UseVisualStyleBackColor = true;
+            button8.Click += button8_Click;
+            // 
+            // button9
+            // 
+            button9.Location = new Point(542, 381);
+            button9.Name = "button9";
+            button9.Size = new Size(105, 40);
+            button9.TabIndex = 9;
+            button9.Text = "Конус";
+            button9.UseVisualStyleBackColor = true;
+            button9.Click += button9_Click;
+            // 
+            // button10
+            // 
+            button10.Location = new Point(431, 210);
+            button10.Name = "button10";
+            button10.Size = new Size(105, 40);
+            button10.TabIndex = 10;
+            button10.Text = "Цилиндр";
+            button10.UseVisualStyleBackColor = true;
+            button10.Click += button10_Click;
             // 
             // Form1
             // 
@@ -121,6 +166,10 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(800, 450);
+            Controls.Add(button10);
+            Controls.Add(button9);
+            Controls.Add(button8);
+            Controls.Add(button7);
             Controls.Add(button6);
             Controls.Add(button5);
             Controls.Add(button4);
@@ -143,5 +192,9 @@
         private Button button4;
         private Button button5;
         private Button button6;
+        private Button button7;
+        private Button button8;
+        private Button button9;
+        private Button button10;
     }
 }
